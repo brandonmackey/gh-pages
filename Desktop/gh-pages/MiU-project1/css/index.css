@@ -1,0 +1,50 @@
+/*
+Brandon Mackey
+MiU Project 1
+Term 1210
+CSS styles sheet for Web App part 1
+Sept. 26, 2012
+*/ 
+
+/* -- Background image of yellow notepad --*/ 
+body{
+	background-image:url("../image/notepad_photo.jpg"); 
+	background-repeat:no-repeat;
+}
+
+/* -- Name of App or title "What To Do?" --*/ 
+h1 {
+	font: 36px bold tahoma;
+	margin: 0;
+	text-align: center
+}
+
+/* -- What the does and explains app --*/ 
+h2 {
+	font: 16px bold tahoma;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	text-align: center;
+	margin-bottom: 85px;
+	margin-top: 20px
+	
+    
+}
+
+/* -- "Get started on What To Do" --*/ 
+h3{
+	
+	margin: 10px;
+	text-align: center;
+	margin-bottom: 40px
+	
+}
+
+/* -- "Make a List" link at bottom of page--*/ 
+a{
+	font-size: xx-large;
+	margin: 66px;
+	outline: hidden;
+}
+
+a:hover{color:red;outline: none;}

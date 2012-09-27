@@ -1,0 +1,20 @@
+/*
+Brandon Mackey
+MiU Project 1
+Term 1210
+CSS styles sheet for Web App part 1
+Sept. 26, 2012
+*/ 
+
+/* -- Background image of yellow notepad --*/ 
+body{
+	background-image:url("../image/notepad_photo.jpg"); 
+	background-repeat:no-repeat;
+}
+
+/* -- Search Page "My Lists" --*/ 
+h1 {
+	font: 36px bold tahoma;
+	margin: 0;
+	text-align: center
+}
