@@ -1,0 +1,108 @@
+/*
+Brandon Mackey
+MiU Project 1
+Term 1210
+CSS styles sheet for Web App part 1
+Sept. 26, 2012
+*/ 
+
+/* -- Background image of yellow notepad --*/ 
+body{
+	background-image:url("../image/notepad_photo.jpg"); 
+	background-repeat:repeat-y;
+	
+}
+
+/* -- Name of App or title "What To Do?" --*/ 
+h1 {
+	font: 36px;
+	margin: 0;
+	text-align: center;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	presentation-level: front
+	
+}
+
+img{
+	position: absolute;
+	top: 25px;
+	z-index: -100
+}
+
+/* -- What the does and explains app --*/ 
+h2 {
+	font: 16px bold tahoma;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	text-align: center;
+	margin-bottom: 85px;
+	margin-top: 20px
+	
+    
+}
+
+/* -- "Get started on What To Do" --*/ 
+h3{
+	
+	margin: 10px;
+	text-align: center;
+	margin-bottom: 40px
+	
+}
+
+/* -- Search localStorage link -- */
+.SearchLts {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #c9b60a) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #c9b60a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#c9b60a');
+	background-color:#ededed;
+	-moz-border-radius:22px;
+	-webkit-border-radius:22px;
+	border-radius:22px;
+	display:inline-block;
+	color:#0a0a0a;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 47px;
+	text-decoration:none;
+	text-shadow:-1px 1px 0px #ffffff;
+	position: absolute;
+	left: 59px;
+	bottom: 55px
+}
+
+/* -- "Make a List" link at bottom of page--*/ 
+.makeList {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #c9b60a) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #c9b60a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#c9b60a');
+	background-color:#ededed;
+	-moz-border-radius:22px;
+	-webkit-border-radius:22px;
+	border-radius:22px;
+	display:inline-block;
+	color:#0a0a0a;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 47px;
+	text-decoration:none;
+	text-shadow:-1px 1px 0px #ffffff;
+	position: absolute;
+	left: 59px;
+	bottom: 5px
+	
+	
+	
+}
+
+a:hover{color:red;outline: none;}
+
