@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Brandon Mackey
+Web App Part 1
+Term 1210
+MiU
+-->
+    
+<html>
+    <head>
+            <!-- Formats for different devices -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Our very first HTML5 document. How exciting!" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="keywords" content="html5, mobile development, Full Sail University, What To Do, Make list" />
+        <meta name="viewport" content="user-scalable=no, width=device-width"/>  
+        <meta name="viewport" content="target-densitydpi=device-dpi"/> 
+        <!-- <link href="css/additem.css" type="text/css" rel="stylesheet" /> -->
+    </head>
+    <body>
+        <!--Name of App -->
+        <h1>What To Do?</h1>
+        <!-- <a href="search.html">Search</a> -->
+        <form action="#" method="post">
+            <!-- Add New List links -->
+            <a href="additem.html" id="addNew" style="display:none;">Add New List</a>
+            <fieldset id="listForm">
+                <legend>Something To Do</legend>
+                <ul id="errors"></ul>
+                    <ul>
+                        <!-- Drop down Box "Dynamic though js"-->
+                        <li id="select"><label for="To Do List">*List Type:</label><br /></li>
+                        <li>Importance:
+                            <ul>
+                                <!-- radio buttons for importance of list -->
+                                <li><input type="radio" value="High Priority" id="high priority" name="importance" /><label for="high priority">High Priority</label></li>
+                                <li><input type="radio" value="Low Priority" id="low priority" name="importance" /><label for="low priority">Low Priority</label></li>
+                            </ul>
+                        </li>
+                        <li>Date:
+                            <!--date box with placeholder -->
+                            <input type="date" id="date" placeholder="12/31/2012" />
+                        </li>
+                        <li>Quantity:
+                            <!--Slider bar to choose quantity -->
+                            <input type="range" id="range" min="0" max="25" value="0"/>
+                            <span id="rangeValue"></span>
+                        </li>   
+                                <!-- Text fields for What to do & Where to do it -->
+                        <li><label for="what">*What:</label><input type="text" id="what" /></li>
+                        <li><label for="where">*Where:</label><input type="text" id="where" /></li>
+                        <!-- Take Notes Box field -->
+                        <li><label for="notes">Notes:</label><textarea id="notes"></textarea></li>
+                        <!-- checkbox for favorite -->
+                        <li><input type="checkbox" value="Yes" id="fav" class="checkbox" /><label for="fav">Save as favorite?</label></li>
+                    </ul>
+            <!--Save button at bottom  --> 
+            <input type="button" value="Save it NOW!" id="submit"/>
+            </fieldset>
+            <!-- clear stored data & Display links -->
+            <a href="#" id="clear">Clear stored Data</a>
+            <a href="#" id="displayLink">Display List</a>
+            <br/>
+        </form>
+        <!-- COMMENT OUT WHEN NOT TESTING JSON DATA -->
+        <script type="text/javascript" src="js/JSON.js"></script> 
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+    
+</html>
