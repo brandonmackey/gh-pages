@@ -1,0 +1,244 @@
+// Brandon Mackey
+// MiU Term: 1210
+// Bronze App
+
+
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>MiU Mobile App</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/additem.css" /> 
+	<link rel="stylesheet" href="css/themes/custom.min.css" />
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+         <!-- THIS IS WERE THE HOME PAGE STARTS -->
+        <div data-role="page" id="home">
+            <div data-role="header" data-theme="a">
+                <h1>What To Do?</h1>
+            </div>
+            <!-- CONTENT OF THE PAGE -->
+            <div data-role="content" data-theme="a">
+                <!-- CTA IMAGE FOR FRONT PAGE -->
+                <img src= "../Mackey_Brandon_Gold_project4/image/ListCTA.png" alt="CTA" width="304" height="228">
+                
+                <!-- MAKE A LIST BUTTON ON FRONT PAGE -->
+                <p><a href="additem.html" data-ajax="false" data-role="button" data-icon="arrow-r" data-theme="a" data-iconpos="right">Make A List</a></p>
+                
+                <!-- BROWSE ON FRONT PAGE  and SEARCH FILTER-->
+		<ul  data-role="listview" data-inset="true" data-filter="true">
+                    <li data-role="list-divider">Browse Lists</li>
+                    <div class="ui-grid-a">
+			<a href="#error">
+			    <div class="ui-block-a"><strong><img src="../Mackey_Brandon_Gold_project4/image/Grocery_List.png"/></strong><br />Grocery List</div>
+			    <div class="ui-block-b"><strong><img src="../Mackey_Brandon_Gold_project4/image/Don't_Forget!.png"/></strong><br />Don't Forget!</div>
+			</a>
+		    </div>
+		    <div class="ui-grid-a">
+			<a href="#error">
+			    <div class="ui-block-a"><strong><img src="../Mackey_Brandon_Gold_project4/image/Wish_List.png"/></strong><br />Wish List</div>
+			    <div class="ui-block-b"><strong><img src="../Mackey_Brandon_Gold_project4/image/Honey_Do_List!.png"/></strong><br />Honey Do List!</div>
+			</a>
+		    </div>
+		</ul>
+            </div>
+           <!-- THIS IS THE FOOTER -->
+            <div data-role="footer" data-theme="a"  data-id="home">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
+			<li><a href="#info" data-icon="info">Info</a></li>
+			<li><a href="#about" data-icon="plus">About</a></li>
+			<li><a href="#news" data-icon="check">My Lists</a></li>
+
+		    </ul>
+		</div>
+            </div>
+        </div>
+	
+	<!-- THIS IS WERE THE INFO PAGE STARTS -->
+        <div data-role="page" id="info">
+            <div data-role="header" data-theme="a">
+                <h1>Info Page</h1>
+            </div>
+	    <!-- CONTENT OF THE PAGE -->
+            <div data-role="content" data-theme="a">
+		
+		<a href="#home"><img src= "../Mackey_Brandon_Bronze_project4/image/brand_brz.png" id="branding" alt="brand" width="200" height="80"></a>
+		
+		<!-- GITHUB LINK -->
+		<li><a href="https://github.com/brandonmackey/gh-pages/tree/master/Desktop/gh-pages">Github Link</a></li>
+	    </div>
+	    
+	    <div data-role="content" data-theme="a">
+		<!-- Bronze App -->
+		<li><a href="../Mackey_Brandon_Bronze_project4/index.html">Bronze App</a></li>
+	    </div>
+	    
+	    <div data-role="content" data-theme="a">
+		<!-- Gold App -->
+		<li><a href="../Mackey_Brandon_Gold_project4/index.html">Gold App</a></li>
+	    </div>
+
+	    <!-- THIS IS THE FOOTER -->
+            <div data-role="footer" data-theme="a" data-position="fixed" data-id="home">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#info" data-icon="info" class="ui-btn-active">Info</a></li>
+			<li><a href="#about" data-icon="plus">About</a></li>
+			<li><a href="#news" data-icon="check">My Lists</a></li>
+		    </ul>
+		</div>
+            </div>
+        </div>
+		
+		<!-- THIS IS WERE THE ABOUT PAGE STARTS -->
+        <div data-role="page" id="about">
+            <div data-role="header" data-theme="a">
+                <h1>About</h1>
+            </div>
+	    <!-- CONTENT OF THE PAGE -->
+            <div data-role="content" data-theme="a">
+		
+		<a href="#home"><img src= "../Mackey_Brandon_Bronze_project4/image/brand_brz.png" id="branding" alt="brand" width="200" height="80"></a>
+		<h2>What To Do?</h2>
+		<p>Creator: Brandon Mackey</p>
+		<p>Designer: Brandon Mackey</p>
+		<p>Made In the USA</p>
+		<p>I would like to thank <br/><a href="http://online.fullsail.edu/degrees/mobile-development-bachelors">Full Sail University</a>for the help in creating and development of this app.</p>
+
+		
+	    </div>
+
+	    <!-- THIS IS THE FOOTER -->
+            <div data-role="footer" data-theme="a" data-position="fixed" data-id="home">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#info" data-icon="info" >Info</a></li>
+			<li><a href="#about" data-icon="plus" class="ui-btn-active">About</a></li>
+			<li><a href="#news" data-icon="check">My Lists</a></li>
+		    </ul>
+		</div>
+            </div>
+        </div>
+ 
+	<!-- THIS IS WERE THE NEWS MY LISTS PAGE STARTS -->
+        <div data-role="page" id="news">
+            <div data-role="header" data-theme="a">
+                <h1>My Lists</h1>
+            </div>
+	    <!-- CONTENT OF THE PAGE -->
+            <div data-role="content" data-theme="a">
+		
+		<h2>What To Do:</h2>
+		
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>Grocery List: 10/05/12  ~Apples~</h3>
+		    <p>Meijer / Green Apples / Qt: 5</p>
+		</div>
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>Grocery List: 10/05/12  ~Bread~</h3>
+		    <p>Meijer / Wheat Bread / Qt: 1</p>
+		</div>
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>Grocery List: 10/05/12  ~Salsa~</h3>
+		    <p>Meijer / Mild Salsa / Qt: 5</p>
+		</div>
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>Grocery List: 10/05/12  ~Chips~</h3>
+		    <p>Meijer / Salsa Chips / Qt: 2</p>
+		</div>
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>Grocery List: 10/05/12  ~Green Peppers~</h3>
+		    <p>Meijer / Green Peppers / Qt: 5</p>
+		</div><div data-role="collapsible" data-collapsed="true">
+		    <h3>Grocery List: 10/05/12  ~Pepsi~</h3>
+		    <p>Meijer / Pepsi Next / Qt: 2</p>
+		</div>
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>Grocery List: 10/05/12  ~Cheese~</h3>
+		    <p>Meijer / American Cheese / Qt: 1</p>
+		</div>
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>Don't Forget: 10/17/12  ~Big Macs~</h3>
+		    <p>McDs / Big Macs / Qt: 2</p>
+		</div>
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>Honey Do List: 10/25/12  ~Mow~</h3>
+		    <p>My House / Because she said so!</p>
+		</div>
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>Don't Forget: 10/25/12  ~Gift~</h3>
+		    <p>Baby's R Us / Gift for baby / Qt: 5</p>
+		</div>
+		
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>Don't Forget: 11/25/12  ~B Day Card~</h3>
+		    <p>CVS / Brother B Day / Qt: 1</p>
+		</div>
+		<li data-role="list-divider">Expired Lists</li>
+		
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>Don't Forget: 07/17/12  ~BO2~</h3>
+		    <p>Gamestop / Black Ops 2 / Qt: 1</p>
+		</div>
+	    </div>
+
+	    <!-- THIS IS THE FOOTER -->
+            <div data-role="footer" data-theme="a" data-position="fixed">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#info" data-icon="info" >Info</a></li>
+			<li><a href="#about" data-icon="plus">About</a></li>
+			<li><a href="#news" data-icon="check" class="ui-btn-active">My Lists</a></li>
+		    </ul>
+		</div>
+            </div>
+        </div>
+
+	
+	<!-- THIS IS WERE THE 404 PAGE STARTS -->
+        <div data-role="page" id="error" data-add-back-btn="true">
+            <div data-role="header" data-theme="a">
+                <h1>404 error page</h1>
+            </div>
+	    <!-- CONTENT OF THE PAGE -->
+            <div data-role="content" data-theme="a">
+		<h2>404 Error:</h2>
+		<p>Something has happened? </p>
+		<p>HURRY GO BACK!</p>
+		<img src="../Mackey_Brandon_Gold_project4/image/grenade.png"
+		
+	    </div>
+
+	    <!-- THIS IS THE FOOTER -->
+            <div data-role="footer" data-theme="a" data-position="fixed"></div>   
+        </div>
+	
+	
+        <!-- JavaScript under here -->
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
